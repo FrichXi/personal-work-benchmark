@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/FrichXi/funeralai/main/assets/logo.png" alt="葬AI" width="400">
 </p>
 
-# Personal Work Benchmark / 个人真实任务评测
+# Personal Work Benchmark / 葬AI Benchmark
 
 ```bash
 git clone https://github.com/FrichXi/personal-work-benchmark.git
