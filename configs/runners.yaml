@@ -1,0 +1,27 @@
+runners:
+  - name: opencode
+    type: opencode
+    command: >
+      opencode run
+      --model "{model.version}"
+      --cwd "{run.dir}"
+      --prompt-file "{task.prompt}"
+    timeout_minutes: 90
+    retries: 1
+
+  - name: claude-code
+    type: claude-code
+    command: >
+      claude
+      --model "{model.version}"
+      --dangerously-skip-permissions
+      < "{task.prompt}"
+    timeout_minutes: 90
+    retries: 1
+
+  - name: custom-command
+    type: custom-command
+    command: >
+      echo "Run {task.id} with {model.name} round {round.number} into {run.dir}"
+    timeout_minutes: 90
+    retries: 0

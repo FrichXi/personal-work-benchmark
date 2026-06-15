@@ -1,0 +1,19 @@
+{
+  "name": "personal-work-benchmark",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Personal real-work benchmark pipeline for model and coding-agent evaluation.",
+  "bin": {
+    "pwb": "scripts/pwb.mjs"
+  },
+  "scripts": {
+    "validate": "node scripts/pwb.mjs validate",
+    "aggregate": "node scripts/pwb.mjs aggregate --input examples/funeralai-web4/results/scores.csv --out examples/funeralai-web4/results",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "yaml": "^2.6.1"
+  },
+  "devDependencies": {}
+}

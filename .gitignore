@@ -1,0 +1,19 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+runs/
+evidence/
+tmp/
+dist/
+coverage/
+
+*.log
+*.pid
+*-pids.txt
+
+# Keep result summaries small and reviewable. Full generated sites should be
+# published as release artifacts or hosted separately, not committed here.
+generated-sites/

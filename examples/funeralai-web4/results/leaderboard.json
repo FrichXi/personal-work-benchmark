@@ -1,0 +1,1101 @@
+{
+  "task": "funeralai-web4",
+  "generatedAt": "2026-06-15T16:16:33.730Z",
+  "scoring": {
+    "total": 100,
+    "dimensions": [
+      {
+        "id": "loading",
+        "label": "Loading",
+        "points": 15,
+        "source": "loading"
+      },
+      {
+        "id": "graph",
+        "label": "Graph",
+        "points": 35,
+        "source": "graph_old25",
+        "scale_from": 25
+      },
+      {
+        "id": "articles",
+        "label": "Articles",
+        "points": 15,
+        "source": "articles_old25",
+        "scale_from": 25
+      },
+      {
+        "id": "visual",
+        "label": "Visual",
+        "points": 20,
+        "source": "visual"
+      },
+      {
+        "id": "interaction",
+        "label": "Interaction",
+        "points": 15,
+        "source": "interaction"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "round": "r1",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 98,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 35,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=20, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 2,
+      "round": "r5",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 96,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 35,
+        "articles": 15,
+        "visual": 16,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=17, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 3,
+      "round": "r4",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 95.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=26, purple=yes, overflow=no."
+    },
+    {
+      "rank": 4,
+      "round": "r9",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 94.6,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 33.6,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=12, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 5,
+      "round": "r2",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=16, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 6,
+      "round": "r4",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=21, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 7,
+      "round": "r5",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=16, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 8,
+      "round": "r7",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=15, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 9,
+      "round": "r7",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=21, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 10,
+      "round": "r9",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=13, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 11,
+      "round": "r10",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=20, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 12,
+      "round": "r2",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=20, purple=no, overflow=no."
+    },
+    {
+      "rank": 13,
+      "round": "r4",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 93.8,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=17, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 14,
+      "round": "r4",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 93,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=19, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 15,
+      "round": "r6",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 93,
+      "grade": "A",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=24, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 16,
+      "round": "r5",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 91,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=21, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 17,
+      "round": "r9",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 91,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=22, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 18,
+      "round": "r2",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 91,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=21, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 19,
+      "round": "r7",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 91,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=15, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 20,
+      "round": "r10",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 91,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=18, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 21,
+      "round": "r8",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 89.4,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 30.8,
+        "articles": 12.6,
+        "visual": 18,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article weakness: 1 links, detail text 2181/2181; visual signals: cssVars=20, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 22,
+      "round": "r3",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 89,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 16,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=21, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 23,
+      "round": "r8",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 89,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 16,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=17, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 24,
+      "round": "r9",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 89,
+      "grade": "A-",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 16,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=15, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 25,
+      "round": "r1",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 86.8,
+      "grade": "B+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 23.8,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=19, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 26,
+      "round": "r2",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 86.4,
+      "grade": "B+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 29.4,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=14, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 27,
+      "round": "r2",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 82.4,
+      "grade": "B+",
+      "dimensions": {
+        "loading": 11,
+        "graph": 30.8,
+        "articles": 9.6,
+        "visual": 18,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article weakness: 104 links, detail text 139/154; visual signals: cssVars=14, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 28,
+      "round": "r10",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 82.4,
+      "grade": "B+",
+      "dimensions": {
+        "loading": 11,
+        "graph": 30.8,
+        "articles": 9.6,
+        "visual": 18,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article weakness: 104 links, detail text 120/134; visual signals: cssVars=17, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 29,
+      "round": "r3",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 82.2,
+      "grade": "B+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 25.2,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=18, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 30,
+      "round": "r6",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 80,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 28,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 31,
+      "round": "r1",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 79,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=21, purple=yes, overflow=no."
+    },
+    {
+      "rank": 32,
+      "round": "r5",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 79,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=22, purple=yes, overflow=no."
+    },
+    {
+      "rank": 33,
+      "round": "r7",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 79,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=37, purple=yes, overflow=no."
+    },
+    {
+      "rank": 34,
+      "round": "r1",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 77,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=24, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 35,
+      "round": "r2",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 77,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=23, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 36,
+      "round": "r8",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 77,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=20, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 37,
+      "round": "r6",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 77,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=19, purple=no, overflow=no."
+    },
+    {
+      "rank": 38,
+      "round": "r8",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 77,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=28, purple=yes, overflow=no."
+    },
+    {
+      "rank": 39,
+      "round": "r3",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 76.2,
+      "grade": "B",
+      "dimensions": {
+        "loading": 13,
+        "graph": 25.2,
+        "articles": 15,
+        "visual": 14,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=9, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 40,
+      "round": "r10",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 75.4,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 29.4,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 41,
+      "round": "r5",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 75,
+      "grade": "B",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 16,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=12, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 42,
+      "round": "r6",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 74.4,
+      "grade": "C+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 22.4,
+        "articles": 15,
+        "visual": 9,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 43,
+      "round": "r10",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 73,
+      "grade": "C+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 16,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=22, purple=no, overflow=no."
+    },
+    {
+      "rank": 44,
+      "round": "r7",
+      "model": "GLM",
+      "runner": "unspecified",
+      "score": 72.8,
+      "grade": "C+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 9.8,
+        "articles": 15,
+        "visual": 20,
+        "interaction": 13
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=19, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 45,
+      "round": "r6",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 70.4,
+      "grade": "C+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 22.4,
+        "articles": 15,
+        "visual": 9,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 46,
+      "round": "r5",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 68.6,
+      "grade": "C+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 5.6,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 15
+      },
+      "evidence": "core routes load; no graph render (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=12, purple=yes, mobileOverflow=no."
+    },
+    {
+      "rank": 47,
+      "round": "r8",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 68.4,
+      "grade": "C+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 22.4,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 48,
+      "round": "r9",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 68.2,
+      "grade": "C+",
+      "dimensions": {
+        "loading": 15,
+        "graph": 11.2,
+        "articles": 15,
+        "visual": 18,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=34, purple=yes, overflow=no."
+    },
+    {
+      "rank": 49,
+      "round": "r1",
+      "model": "Qwen",
+      "runner": "unspecified",
+      "score": 66.2,
+      "grade": "C",
+      "dimensions": {
+        "loading": 15,
+        "graph": 18.2,
+        "articles": 15,
+        "visual": 9,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 50,
+      "round": "r6",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 66,
+      "grade": "C",
+      "dimensions": {
+        "loading": 15,
+        "graph": 14,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph rendered (0 canvas, 1 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no. visible-graph audit: online graph did not visibly render; Graph capped at shell score."
+    },
+    {
+      "rank": 51,
+      "round": "r4",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 64.6,
+      "grade": "C",
+      "dimensions": {
+        "loading": 15,
+        "graph": 12.6,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 52,
+      "round": "r7",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 64.6,
+      "grade": "C",
+      "dimensions": {
+        "loading": 15,
+        "graph": 12.6,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 15
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 53,
+      "round": "r8",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 64.2,
+      "grade": "C",
+      "dimensions": {
+        "loading": 15,
+        "graph": 18.2,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph rendered (1 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 54,
+      "round": "r9",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 62.4,
+      "grade": "C",
+      "dimensions": {
+        "loading": 15,
+        "graph": 8.4,
+        "articles": 15,
+        "visual": 9,
+        "interaction": 15
+      },
+      "evidence": "core routes load; no graph render (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 55,
+      "round": "r10",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 61.8,
+      "grade": "C",
+      "dimensions": {
+        "loading": 15,
+        "graph": 9.8,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 15
+      },
+      "evidence": "core routes load; no graph render (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 56,
+      "round": "r3",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 57.8,
+      "grade": "D",
+      "dimensions": {
+        "loading": 15,
+        "graph": 9.8,
+        "articles": 15,
+        "visual": 9,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 57,
+      "round": "r3",
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "score": 57.8,
+      "grade": "D",
+      "dimensions": {
+        "loading": 15,
+        "graph": 9.8,
+        "articles": 15,
+        "visual": 9,
+        "interaction": 9
+      },
+      "evidence": "core routes load; graph shell only (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 58,
+      "round": "r3",
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "score": 52.6,
+      "grade": "D",
+      "dimensions": {
+        "loading": 9,
+        "graph": 9.8,
+        "articles": 4.8,
+        "visual": 18,
+        "interaction": 11
+      },
+      "evidence": "core routes load; no graph render (0 canvas, 0 rich svg); article weakness: 0 links, detail text ; visual signals: cssVars=32, purple=yes, overflow=no."
+    },
+    {
+      "rank": 59,
+      "round": "r4",
+      "model": "Kimi",
+      "runner": "unspecified",
+      "score": 51.6,
+      "grade": "D",
+      "dimensions": {
+        "loading": 15,
+        "graph": 5.6,
+        "articles": 15,
+        "visual": 7,
+        "interaction": 9
+      },
+      "evidence": "core routes load; no graph render (0 canvas, 0 rich svg); article list and sampled full text pass; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    },
+    {
+      "rank": 60,
+      "round": "r1",
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "score": 39.2,
+      "grade": "D",
+      "dimensions": {
+        "loading": 11,
+        "graph": 5.6,
+        "articles": 9.6,
+        "visual": 9,
+        "interaction": 4
+      },
+      "evidence": "core routes load; no graph render (0 canvas, 0 rich svg); article weakness: 104 links, detail text 136/144; visual signals: cssVars=0, purple=no, mobileOverflow=no."
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model": "GLM",
+      "runner": "unspecified",
+      "count": 10,
+      "avg": 85.46,
+      "min": 72.8,
+      "max": 93.8,
+      "dimensions": {
+        "loading": 15,
+        "graph": 22.26,
+        "articles": 15,
+        "visual": 18.4,
+        "interaction": 14.8
+      }
+    },
+    {
+      "rank": 2,
+      "model": "Opus 4.8",
+      "runner": "unspecified",
+      "count": 10,
+      "avg": 85.2,
+      "min": 57.8,
+      "max": 98,
+      "dimensions": {
+        "loading": 15,
+        "graph": 26.04,
+        "articles": 14.76,
+        "visual": 16,
+        "interaction": 13.4
+      }
+    },
+    {
+      "rank": 3,
+      "model": "Qwen",
+      "runner": "unspecified",
+      "count": 10,
+      "avg": 82.38,
+      "min": 66.2,
+      "max": 93.8,
+      "dimensions": {
+        "loading": 14.4,
+        "graph": 27.72,
+        "articles": 14.46,
+        "visual": 13.4,
+        "interaction": 12.4
+      }
+    },
+    {
+      "rank": 4,
+      "model": "Kimi",
+      "runner": "unspecified",
+      "count": 10,
+      "avg": 80.32,
+      "min": 51.6,
+      "max": 93.8,
+      "dimensions": {
+        "loading": 14.6,
+        "graph": 22.26,
+        "articles": 14.46,
+        "visual": 15.4,
+        "interaction": 13.6
+      }
+    },
+    {
+      "rank": 5,
+      "model": "MiniMax",
+      "runner": "unspecified",
+      "count": 10,
+      "avg": 77.44,
+      "min": 52.6,
+      "max": 95.8,
+      "dimensions": {
+        "loading": 14.4,
+        "graph": 16.66,
+        "articles": 13.98,
+        "visual": 18.8,
+        "interaction": 13.6
+      }
+    },
+    {
+      "rank": 6,
+      "model": "DeepSeek",
+      "runner": "unspecified",
+      "count": 10,
+      "avg": 67.14,
+      "min": 39.2,
+      "max": 96,
+      "dimensions": {
+        "loading": 14.6,
+        "graph": 16.38,
+        "articles": 14.46,
+        "visual": 9.8,
+        "interaction": 11.9
+      }
+    }
+  ]
+}

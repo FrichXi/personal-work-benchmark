@@ -1,0 +1,42 @@
+models:
+  - name: DeepSeek
+    slug: deepseek-v4-pro
+    version: DeepSeek V4 Pro
+    provider: deepseek
+    env:
+      - DEEPSEEK_API_KEY
+
+  - name: Kimi
+    slug: kimi-k2-7-code
+    version: Kimi K2.7 Code
+    provider: moonshot
+    env:
+      - MOONSHOT_API_KEY
+
+  - name: Qwen
+    slug: qwen3-7-max
+    version: Qwen3.7 Max
+    provider: dashscope
+    env:
+      - DASHSCOPE_API_KEY
+
+  - name: GLM
+    slug: glm-x-preview
+    version: GLM 5.2
+    provider: zhipu
+    env:
+      - ZHIPU_API_KEY
+
+  - name: MiniMax
+    slug: minimax-m3
+    version: MiniMax M3
+    provider: minimax
+    env:
+      - MINIMAX_API_KEY
+
+  - name: Opus 4.8
+    slug: claude-opus-4-8
+    version: Claude Opus 4.8
+    provider: anthropic
+    env:
+      - ANTHROPIC_API_KEY

@@ -1,0 +1,61 @@
+task:
+  id: funeralai-web4
+  title: 葬AI Web4 复杂个人网站重构
+  description: >
+    让模型基于同一份本地数据，独立重构一个可浏览的静态网站。
+    任务包含首页、知识图谱、文章列表和文章详情。
+  rounds: 10
+
+inputs:
+  fixture: examples/fixtures/tiny-web-task
+  prompt: examples/funeralai-web4/task-prompt.md
+
+outputs:
+  root: runs/{task}/{runner}/{model}/{round}
+  required_paths:
+    - /
+    - /graph/
+    - /articles/
+    - /articles/050/
+    - /articles/080/
+    - /articles/103/
+
+scoring:
+  total: 100
+  dimensions:
+    - id: loading
+      label: Loading
+      points: 15
+      source: loading
+    - id: graph
+      label: Graph
+      points: 35
+      source: graph_old25
+      scale_from: 25
+    - id: articles
+      label: Articles
+      points: 15
+      source: articles_old25
+      scale_from: 25
+    - id: visual
+      label: Visual
+      points: 20
+      source: visual
+    - id: interaction
+      label: Interaction
+      points: 15
+      source: interaction
+
+evidence:
+  required:
+    - per-site evidence sentence
+    - browser-loaded route status
+    - graph render signal
+    - sampled article detail text length
+  screenshots:
+    - home
+    - graph
+
+claims:
+  allowed: 只说明葬AI Web4 复杂个人网站重构任务里的表现。
+  forbidden: 不宣称模型通用能力排名，不宣称可代表所有用户需求。
