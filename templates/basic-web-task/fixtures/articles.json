@@ -1,0 +1,9 @@
+[
+  {
+    "id": "001",
+    "title": "Example article",
+    "date": "2026-01-01",
+    "author": "demo",
+    "raw_markdown": "# Example article\n\nThis is a tiny template article."
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "task": "tiny-web-task",
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "scoring": {
+    "total": 100,
+    "dimensions": [
+      {
+        "id": "loading",
+        "label": "Loading",
+        "points": 20,
+        "source": "loading"
+      },
+      {
+        "id": "graph",
+        "label": "Graph",
+        "points": 25,
+        "source": "graph"
+      },
+      {
+        "id": "articles",
+        "label": "Articles",
+        "points": 25,
+        "source": "articles"
+      },
+      {
+        "id": "visual",
+        "label": "Visual",
+        "points": 15,
+        "source": "visual"
+      },
+      {
+        "id": "interaction",
+        "label": "Interaction",
+        "points": 15,
+        "source": "interaction"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "round": "r1",
+      "model": "Demo Strong",
+      "runner": "custom-command",
+      "score": 96,
+      "grade": "A",
+      "dimensions": {
+        "loading": 20,
+        "graph": 24,
+        "articles": 25,
+        "visual": 14,
+        "interaction": 13
+      },
+      "evidence": "all required routes generated; graph page lists demo-founder to demo-product; article 001 detail includes full source text."
+    },
+    {
+      "rank": 2,
+      "round": "r2",
+      "model": "Demo Strong",
+      "runner": "custom-command",
+      "score": 94,
+      "grade": "A",
+      "dimensions": {
+        "loading": 20,
+        "graph": 23,
+        "articles": 25,
+        "visual": 13,
+        "interaction": 13
+      },
+      "evidence": "all required routes generated; graph relation is visible as text; article list and sampled detail are complete."
+    },
+    {
+      "rank": 3,
+      "round": "r1",
+      "model": "Demo Baseline",
+      "runner": "custom-command",
+      "score": 82,
+      "grade": "B+",
+      "dimensions": {
+        "loading": 20,
+        "graph": 18,
+        "articles": 22,
+        "visual": 11,
+        "interaction": 11
+      },
+      "evidence": "routes are present; graph is a readable fallback list; article detail works but visual hierarchy is plain."
+    },
+    {
+      "rank": 4,
+      "round": "r2",
+      "model": "Demo Baseline",
+      "runner": "custom-command",
+      "score": 78,
+      "grade": "B",
+      "dimensions": {
+        "loading": 18,
+        "graph": 17,
+        "articles": 22,
+        "visual": 10,
+        "interaction": 11
+      },
+      "evidence": "home and articles load; graph relation is present but minimal; sampled detail is complete."
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model": "Demo Strong",
+      "runner": "custom-command",
+      "count": 2,
+      "avg": 95,
+      "min": 94,
+      "max": 96,
+      "dimensions": {
+        "loading": 20,
+        "graph": 23.5,
+        "articles": 25,
+        "visual": 13.5,
+        "interaction": 13
+      }
+    },
+    {
+      "rank": 2,
+      "model": "Demo Baseline",
+      "runner": "custom-command",
+      "count": 2,
+      "avg": 80,
+      "min": 78,
+      "max": 82,
+      "dimensions": {
+        "loading": 19,
+        "graph": 17.5,
+        "articles": 22,
+        "visual": 10.5,
+        "interaction": 11
+      }
+    }
+  ]
+}

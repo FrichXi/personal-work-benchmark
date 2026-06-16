@@ -1,7 +1,8 @@
-import { mkdir } from "node:fs/promises";
+import { mkdir, writeFile } from "node:fs/promises";
 import { spawn } from "node:child_process";
+import path from "node:path";
 
-export function buildRunPlan({ benchmark, models, runners, runnerName = null }) {
+export function buildRunPlan({ benchmark, models, runners, runnerName = null, benchmarkPath = null }) {
   const selectedRunners = runnerName
     ? runners.runners.filter((runner) => runner.name === runnerName)
     : runners.runners;
@@ -23,17 +24,27 @@ export function buildRunPlan({ benchmark, models, runners, runnerName = null }) 
         });
 
         const context = {
-          task: benchmark.task,
+          task: {
+            ...benchmark.task,
+            prompt: resolveInputPath(benchmark.inputs?.prompt, benchmarkPath),
+            fixture: resolveInputPath(benchmark.inputs?.fixture, benchmarkPath),
+          },
           model,
           runner,
           round: { number: round, id: `r${round}` },
-          run: { dir: runDir },
+          run: {
+            dir: runDir,
+            prompt: "TASK.md",
+            input: "input",
+          },
         };
 
         runs.push({
+          taskId: benchmark.task.id,
           runner: runner.name,
           runnerType: runner.type,
           model: model.name,
+          modelSlug: model.slug,
           round,
           dir: runDir,
           command: interpolate(runner.command, context),
@@ -53,19 +64,29 @@ export async function executeRun(run, { dryRun = false } = {}) {
   }
 
   await mkdir(run.dir, { recursive: true });
+  const stdout = [];
+  const stderr = [];
+  const attempts = [];
 
   for (let attempt = 0; attempt <= run.retries; attempt += 1) {
     const result = await shell(run.command, {
       cwd: run.dir,
       timeoutMs: run.timeoutMinutes * 60 * 1000,
+      stdout,
+      stderr,
     });
+    attempts.push({ attempt, ...result });
 
     if (result.code === 0) {
-      return { ...run, status: "ok", attempt };
+      const status = { ...run, status: "ok", attempt, attempts, finishedAt: new Date().toISOString() };
+      await writeRunLogs(run.dir, stdout, stderr, status);
+      return status;
     }
   }
 
-  return { ...run, status: "failed" };
+  const status = { ...run, status: "failed", attempts, finishedAt: new Date().toISOString() };
+  await writeRunLogs(run.dir, stdout, stderr, status);
+  return status;
 }
 
 export function interpolate(template, context) {
@@ -75,13 +96,36 @@ export function interpolate(template, context) {
   });
 }
 
-function shell(command, { cwd, timeoutMs }) {
+function resolveInputPath(value, benchmarkPath) {
+  if (!value) return "";
+  if (path.isAbsolute(value)) return value;
+  if (!benchmarkPath) return value;
+  return path.resolve(path.dirname(path.resolve(benchmarkPath)), value);
+}
+
+async function writeRunLogs(dir, stdout, stderr, status) {
+  await writeFile(path.join(dir, "stdout.log"), stdout.join(""));
+  await writeFile(path.join(dir, "stderr.log"), stderr.join(""));
+  await writeFile(path.join(dir, "status.json"), `${JSON.stringify(status, null, 2)}\n`);
+}
+
+function shell(command, { cwd, timeoutMs, stdout, stderr }) {
   return new Promise((resolve) => {
     const child = spawn(command, {
       cwd,
       shell: true,
-      stdio: "inherit",
+      stdio: ["ignore", "pipe", "pipe"],
       timeout: timeoutMs,
+    });
+
+    child.stdout.on("data", (chunk) => {
+      process.stdout.write(chunk);
+      stdout.push(String(chunk));
+    });
+
+    child.stderr.on("data", (chunk) => {
+      process.stderr.write(chunk);
+      stderr.push(String(chunk));
     });
 
     child.on("close", (code, signal) => {

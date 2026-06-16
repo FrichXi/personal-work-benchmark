@@ -1,14 +1,14 @@
 task:
-  id: tiny-web-task
-  title: Tiny web task demo
+  id: basic-web-task
+  title: Basic web task
   description: >
-    Build a tiny static site from two local JSON fixtures. This is the
-    self-contained demo used by the README quickstart.
+    Replace this with a real task from your own work. Keep the input, prompt,
+    output requirements, and scoring dimensions stable across all model runs.
   rounds: 2
 
 inputs:
-  fixture: ../examples/tiny-web-task/fixtures
-  prompt: ../examples/tiny-web-task/task-prompt.md
+  fixture: fixtures
+  prompt: task-prompt.md
 
 outputs:
   root: runs/{task}/{runner}/{model}/{round}
@@ -46,12 +46,12 @@ evidence:
   required:
     - artifact-specific evidence sentence
     - route status
-    - graph render or fallback signal
-    - sampled article detail result
+    - graph or domain-specific completion signal
+    - sampled detail result
   screenshots:
     - home
     - graph
 
 claims:
-  allowed: Only describe performance on this tiny local web task.
+  allowed: Only describe performance on this specific personal task.
   forbidden: Do not present these scores as general model rankings.

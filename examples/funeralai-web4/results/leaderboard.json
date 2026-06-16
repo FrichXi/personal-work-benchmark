@@ -43,7 +43,7 @@
       "rank": 1,
       "round": "r1",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 98,
       "grade": "A",
       "dimensions": {
@@ -59,7 +59,7 @@
       "rank": 2,
       "round": "r5",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 96,
       "grade": "A",
       "dimensions": {
@@ -75,7 +75,7 @@
       "rank": 3,
       "round": "r4",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 95.8,
       "grade": "A",
       "dimensions": {
@@ -91,7 +91,7 @@
       "rank": 4,
       "round": "r9",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 94.6,
       "grade": "A",
       "dimensions": {
@@ -107,7 +107,7 @@
       "rank": 5,
       "round": "r2",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -123,7 +123,7 @@
       "rank": 6,
       "round": "r4",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -139,7 +139,7 @@
       "rank": 7,
       "round": "r5",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -155,7 +155,7 @@
       "rank": 8,
       "round": "r7",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -171,7 +171,7 @@
       "rank": 9,
       "round": "r7",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -187,7 +187,7 @@
       "rank": 10,
       "round": "r9",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -203,7 +203,7 @@
       "rank": 11,
       "round": "r10",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -219,7 +219,7 @@
       "rank": 12,
       "round": "r2",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -235,7 +235,7 @@
       "rank": 13,
       "round": "r4",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93.8,
       "grade": "A",
       "dimensions": {
@@ -251,7 +251,7 @@
       "rank": 14,
       "round": "r4",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93,
       "grade": "A",
       "dimensions": {
@@ -267,7 +267,7 @@
       "rank": 15,
       "round": "r6",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 93,
       "grade": "A",
       "dimensions": {
@@ -283,7 +283,7 @@
       "rank": 16,
       "round": "r5",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 91,
       "grade": "A-",
       "dimensions": {
@@ -299,7 +299,7 @@
       "rank": 17,
       "round": "r9",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 91,
       "grade": "A-",
       "dimensions": {
@@ -315,7 +315,7 @@
       "rank": 18,
       "round": "r2",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 91,
       "grade": "A-",
       "dimensions": {
@@ -331,7 +331,7 @@
       "rank": 19,
       "round": "r7",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 91,
       "grade": "A-",
       "dimensions": {
@@ -347,7 +347,7 @@
       "rank": 20,
       "round": "r10",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 91,
       "grade": "A-",
       "dimensions": {
@@ -363,7 +363,7 @@
       "rank": 21,
       "round": "r8",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 89.4,
       "grade": "A-",
       "dimensions": {
@@ -379,7 +379,7 @@
       "rank": 22,
       "round": "r3",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 89,
       "grade": "A-",
       "dimensions": {
@@ -395,7 +395,7 @@
       "rank": 23,
       "round": "r8",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 89,
       "grade": "A-",
       "dimensions": {
@@ -411,7 +411,7 @@
       "rank": 24,
       "round": "r9",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 89,
       "grade": "A-",
       "dimensions": {
@@ -427,7 +427,7 @@
       "rank": 25,
       "round": "r1",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 86.8,
       "grade": "B+",
       "dimensions": {
@@ -443,7 +443,7 @@
       "rank": 26,
       "round": "r2",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 86.4,
       "grade": "B+",
       "dimensions": {
@@ -459,7 +459,7 @@
       "rank": 27,
       "round": "r2",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 82.4,
       "grade": "B+",
       "dimensions": {
@@ -475,7 +475,7 @@
       "rank": 28,
       "round": "r10",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 82.4,
       "grade": "B+",
       "dimensions": {
@@ -491,7 +491,7 @@
       "rank": 29,
       "round": "r3",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 82.2,
       "grade": "B+",
       "dimensions": {
@@ -507,7 +507,7 @@
       "rank": 30,
       "round": "r6",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 80,
       "grade": "B",
       "dimensions": {
@@ -523,7 +523,7 @@
       "rank": 31,
       "round": "r1",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 79,
       "grade": "B",
       "dimensions": {
@@ -539,7 +539,7 @@
       "rank": 32,
       "round": "r5",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 79,
       "grade": "B",
       "dimensions": {
@@ -555,7 +555,7 @@
       "rank": 33,
       "round": "r7",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 79,
       "grade": "B",
       "dimensions": {
@@ -571,7 +571,7 @@
       "rank": 34,
       "round": "r1",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 77,
       "grade": "B",
       "dimensions": {
@@ -587,7 +587,7 @@
       "rank": 35,
       "round": "r2",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 77,
       "grade": "B",
       "dimensions": {
@@ -603,7 +603,7 @@
       "rank": 36,
       "round": "r8",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 77,
       "grade": "B",
       "dimensions": {
@@ -619,7 +619,7 @@
       "rank": 37,
       "round": "r6",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 77,
       "grade": "B",
       "dimensions": {
@@ -635,7 +635,7 @@
       "rank": 38,
       "round": "r8",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 77,
       "grade": "B",
       "dimensions": {
@@ -651,7 +651,7 @@
       "rank": 39,
       "round": "r3",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 76.2,
       "grade": "B",
       "dimensions": {
@@ -667,7 +667,7 @@
       "rank": 40,
       "round": "r10",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 75.4,
       "grade": "B",
       "dimensions": {
@@ -683,7 +683,7 @@
       "rank": 41,
       "round": "r5",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 75,
       "grade": "B",
       "dimensions": {
@@ -699,7 +699,7 @@
       "rank": 42,
       "round": "r6",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 74.4,
       "grade": "C+",
       "dimensions": {
@@ -715,7 +715,7 @@
       "rank": 43,
       "round": "r10",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 73,
       "grade": "C+",
       "dimensions": {
@@ -731,7 +731,7 @@
       "rank": 44,
       "round": "r7",
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 72.8,
       "grade": "C+",
       "dimensions": {
@@ -747,7 +747,7 @@
       "rank": 45,
       "round": "r6",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 70.4,
       "grade": "C+",
       "dimensions": {
@@ -763,7 +763,7 @@
       "rank": 46,
       "round": "r5",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 68.6,
       "grade": "C+",
       "dimensions": {
@@ -779,7 +779,7 @@
       "rank": 47,
       "round": "r8",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 68.4,
       "grade": "C+",
       "dimensions": {
@@ -795,7 +795,7 @@
       "rank": 48,
       "round": "r9",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 68.2,
       "grade": "C+",
       "dimensions": {
@@ -811,7 +811,7 @@
       "rank": 49,
       "round": "r1",
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 66.2,
       "grade": "C",
       "dimensions": {
@@ -827,7 +827,7 @@
       "rank": 50,
       "round": "r6",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 66,
       "grade": "C",
       "dimensions": {
@@ -843,7 +843,7 @@
       "rank": 51,
       "round": "r4",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 64.6,
       "grade": "C",
       "dimensions": {
@@ -859,7 +859,7 @@
       "rank": 52,
       "round": "r7",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 64.6,
       "grade": "C",
       "dimensions": {
@@ -875,7 +875,7 @@
       "rank": 53,
       "round": "r8",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 64.2,
       "grade": "C",
       "dimensions": {
@@ -891,7 +891,7 @@
       "rank": 54,
       "round": "r9",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 62.4,
       "grade": "C",
       "dimensions": {
@@ -907,7 +907,7 @@
       "rank": 55,
       "round": "r10",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 61.8,
       "grade": "C",
       "dimensions": {
@@ -923,7 +923,7 @@
       "rank": 56,
       "round": "r3",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 57.8,
       "grade": "D",
       "dimensions": {
@@ -939,7 +939,7 @@
       "rank": 57,
       "round": "r3",
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 57.8,
       "grade": "D",
       "dimensions": {
@@ -955,7 +955,7 @@
       "rank": 58,
       "round": "r3",
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 52.6,
       "grade": "D",
       "dimensions": {
@@ -971,7 +971,7 @@
       "rank": 59,
       "round": "r4",
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 51.6,
       "grade": "D",
       "dimensions": {
@@ -987,7 +987,7 @@
       "rank": 60,
       "round": "r1",
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "score": 39.2,
       "grade": "D",
       "dimensions": {
@@ -1004,7 +1004,7 @@
     {
       "rank": 1,
       "model": "GLM",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "count": 10,
       "avg": 85.46,
       "min": 72.8,
@@ -1020,7 +1020,7 @@
     {
       "rank": 2,
       "model": "Opus 4.8",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "count": 10,
       "avg": 85.2,
       "min": 57.8,
@@ -1036,7 +1036,7 @@
     {
       "rank": 3,
       "model": "Qwen",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "count": 10,
       "avg": 82.38,
       "min": 66.2,
@@ -1052,7 +1052,7 @@
     {
       "rank": 4,
       "model": "Kimi",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "count": 10,
       "avg": 80.32,
       "min": 51.6,
@@ -1068,7 +1068,7 @@
     {
       "rank": 5,
       "model": "MiniMax",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "count": 10,
       "avg": 77.44,
       "min": 52.6,
@@ -1084,7 +1084,7 @@
     {
       "rank": 6,
       "model": "DeepSeek",
-      "runner": "unspecified",
+      "runner": "historical-local",
       "count": 10,
       "avg": 67.14,
       "min": 39.2,

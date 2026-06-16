@@ -2,14 +2,14 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseCsv } from "./csv.mjs";
 
-export async function aggregateFile({ input, outDir, benchmark }) {
+export async function aggregateFile({ input, outDir, benchmark, generatedAt = null }) {
   const raw = await readFile(input, "utf8");
   const rows = parseCsv(raw);
   const entries = rows.map((row) => normalizeRow(row, benchmark));
   const leaderboard = aggregateEntries(entries);
   const result = {
     task: benchmark.task.id,
-    generatedAt: new Date().toISOString(),
+    generatedAt: resolveGeneratedAt(generatedAt),
     scoring: benchmark.scoring,
     entries,
     leaderboard,
@@ -130,4 +130,30 @@ function gradeForScore(score) {
   if (score >= 68) return "C+";
   if (score >= 60) return "C";
   return "D";
+}
+
+function resolveGeneratedAt(value) {
+  if (value) {
+    return normalizeTimestamp(value);
+  }
+
+  if (process.env.SOURCE_DATE_EPOCH) {
+    return new Date(Number(process.env.SOURCE_DATE_EPOCH) * 1000).toISOString();
+  }
+
+  return new Date().toISOString();
+}
+
+function normalizeTimestamp(value) {
+  if (/^\d+$/.test(String(value))) {
+    return new Date(Number(value) * 1000).toISOString();
+  }
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    throw new Error(`Invalid generatedAt timestamp: ${value}`);
+  }
+
+  return date.toISOString();
 }

@@ -1,0 +1,5 @@
+rank,round,model,runner,port,score,grade,old_total,loading,graph,articles,visual,interaction,evidence
+1,r1,Demo Strong,custom-command,,96,A,,20,24,25,14,13,all required routes generated; graph page lists demo-founder to demo-product; article 001 detail includes full source text.
+2,r2,Demo Strong,custom-command,,94,A,,20,23,25,13,13,all required routes generated; graph relation is visible as text; article list and sampled detail are complete.
+3,r1,Demo Baseline,custom-command,,82,B+,,20,18,22,11,11,routes are present; graph is a readable fallback list; article detail works but visual hierarchy is plain.
+4,r2,Demo Baseline,custom-command,,78,B,,18,17,22,10,11,home and articles load; graph relation is present but minimal; sampled detail is complete.

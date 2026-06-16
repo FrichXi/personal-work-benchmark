@@ -9,7 +9,11 @@
   },
   "scripts": {
     "validate": "node scripts/pwb.mjs validate",
-    "aggregate": "node scripts/pwb.mjs aggregate --input examples/funeralai-web4/results/scores.csv --out examples/funeralai-web4/results",
+    "demo:prepare": "node scripts/pwb.mjs prepare",
+    "demo:run": "node scripts/pwb.mjs run --runner custom-command",
+    "demo:score": "node scripts/pwb.mjs score --input examples/tiny-web-task/manual-scores.csv --out examples/tiny-web-task/results",
+    "demo:aggregate": "node scripts/pwb.mjs aggregate --input examples/tiny-web-task/results/scores.csv --out examples/tiny-web-task/results --generated-at 2026-01-01T00:00:00.000Z",
+    "aggregate": "npm run demo:aggregate",
     "test": "node --test"
   },
   "dependencies": {

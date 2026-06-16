@@ -9,7 +9,7 @@ test("default configs are valid", async () => {
     runners: "configs/runners.yaml",
   });
 
-  assert.equal(suite.benchmark.task.id, "funeralai-web4");
-  assert.equal(suite.models.models.length, 6);
-  assert.equal(suite.runners.runners.length, 3);
+  assert.equal(suite.benchmark.task.id, "tiny-web-task");
+  assert.equal(suite.models.models.length, 2);
+  assert.equal(suite.runners.runners.length, 1);
 });

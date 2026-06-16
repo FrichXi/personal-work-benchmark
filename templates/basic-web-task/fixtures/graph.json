@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    { "id": "demo-product", "name": "Demo Product", "type": "product" },
+    { "id": "demo-founder", "name": "Demo Founder", "type": "founder" }
+  ],
+  "links": [
+    { "source": "demo-founder", "target": "demo-product", "type": "founded" }
+  ]
+}

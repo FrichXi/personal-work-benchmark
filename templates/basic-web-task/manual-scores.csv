@@ -1,0 +1,5 @@
+rank,round,model,runner,port,score,grade,old_total,loading,graph,articles,visual,interaction,evidence
+1,r1,Demo Strong,custom-command,,95,A,,20,24,24,14,13,"all required routes generated; graph relationship is visible; sampled article detail includes source content."
+2,r2,Demo Strong,custom-command,,93,A,,20,23,24,13,13,"all required routes generated; graph fallback is readable; article list and detail are complete."
+3,r1,Demo Baseline,custom-command,,80,B,,18,18,22,11,11,"core routes load; graph is minimal; article detail works but presentation is plain."
+4,r2,Demo Baseline,custom-command,,76,B,,18,16,22,10,10,"routes are present; graph relation is sparse; sampled detail is complete."

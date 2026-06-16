@@ -48,3 +48,30 @@ export function parseCsvLine(line) {
   cells.push(current);
   return cells;
 }
+
+export function stringifyCsv(rows, headers = null) {
+  const resolvedHeaders = headers || Array.from(
+    rows.reduce((set, row) => {
+      for (const key of Object.keys(row)) set.add(key);
+      return set;
+    }, new Set())
+  );
+
+  const lines = [resolvedHeaders.map(escapeCsvCell).join(",")];
+
+  for (const row of rows) {
+    lines.push(resolvedHeaders.map((header) => escapeCsvCell(row[header] ?? "")).join(","));
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function escapeCsvCell(value) {
+  const text = String(value);
+
+  if (/[",\n\r]/.test(text)) {
+    return `"${text.replaceAll('"', '""')}"`;
+  }
+
+  return text;
+}
