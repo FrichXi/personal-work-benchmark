@@ -3,23 +3,19 @@
 </p>
 
 <p align="center">
-  <strong>English</strong> | <a href="README.zh-CN.md">中文</a>
+  <strong>中文</strong> | <a href="README.en.md">English</a>
 </p>
 
 # Personal Work Benchmark
 
-Turn your real work into a repeatable personal benchmark: same inputs, same
-task prompt, same runner contract, repeated model runs, and evidence-backed
-scoring.
+把你的真实工作变成可重复的个人 benchmark：同一份输入、同一份任务 prompt、同一套 runner 契约、多轮模型运行，以及有证据支撑的评分。
 
-This repository is a reusable template plus a small CLI. It is not a universal
-model leaderboard. The real FuneralAI Web4 case study is browsable here:
-[FuneralAI Web4 测试榜单](https://funeralai.cc/test/).
+这个仓库是一个可复用模板和小型 CLI，不是通用模型排行榜。真实的 FuneralAI Web4 大型案例可以在这里浏览：
+[FuneralAI Web4 测试榜单](https://funeralai.cc/test/)。
 
-## 5-Minute Demo
+## 5 分钟跑通 Demo
 
-The default config runs a tiny self-contained web task. It does not require API
-keys or private data.
+默认配置运行一个完全自包含的 tiny web task，不需要 API key，也不需要私有数据。
 
 ```bash
 git clone https://github.com/FrichXi/personal-work-benchmark.git
@@ -32,7 +28,7 @@ npm run demo:score
 npm run demo:aggregate
 ```
 
-You will get:
+你会得到：
 
 ```text
 runs/tiny-web-task/
@@ -41,23 +37,23 @@ examples/tiny-web-task/results/leaderboard.json
 examples/tiny-web-task/results/leaderboard.md
 ```
 
-## 30-Minute Own Benchmark
+## 30 分钟建立自己的 Benchmark
 
-Create a new task from the template:
+先从模板创建一个新任务：
 
 ```bash
 node scripts/pwb.mjs init my-benchmark
 ```
 
-Then edit:
+然后编辑：
 
-- `benchmarks/my-benchmark/benchmark.yaml` for task scope and scoring dimensions.
-- `benchmarks/my-benchmark/task-prompt.md` for the actual work request.
-- `benchmarks/my-benchmark/fixtures/` for stable local inputs.
-- `benchmarks/my-benchmark/models.yaml` for models/providers.
-- `benchmarks/my-benchmark/runners.yaml` for the command that executes each run.
+- `benchmarks/my-benchmark/benchmark.yaml`：任务范围和评分维度。
+- `benchmarks/my-benchmark/task-prompt.md`：真正要模型完成的工作请求。
+- `benchmarks/my-benchmark/fixtures/`：稳定的本地输入。
+- `benchmarks/my-benchmark/models.yaml`：模型和 provider。
+- `benchmarks/my-benchmark/runners.yaml`：执行每轮任务的命令。
 
-Run the same loop with explicit config paths:
+使用显式配置路径跑同一条流程：
 
 ```bash
 node scripts/pwb.mjs validate --benchmark benchmarks/my-benchmark/benchmark.yaml --models benchmarks/my-benchmark/models.yaml --runners benchmarks/my-benchmark/runners.yaml
@@ -67,11 +63,11 @@ node scripts/pwb.mjs score --benchmark benchmarks/my-benchmark/benchmark.yaml --
 node scripts/pwb.mjs aggregate --benchmark benchmarks/my-benchmark/benchmark.yaml --models benchmarks/my-benchmark/models.yaml --runners benchmarks/my-benchmark/runners.yaml --input benchmarks/my-benchmark/results/scores.csv --out benchmarks/my-benchmark/results
 ```
 
-More detail:
+更多说明：
 
-- [Build your own benchmark](docs/build-your-own.md)
-- [Runner contract](docs/runner-contract.md)
-- [Scoring contract](docs/scoring-contract.md)
+- [建立自己的 benchmark](docs/build-your-own.md)
+- [Runner 契约](docs/runner-contract.md)
+- [Scoring 契约](docs/scoring-contract.md)
 
 ## CLI
 
@@ -84,50 +80,43 @@ pwb score --input manual-scores.csv --out results
 pwb aggregate --input results/scores.csv --out results [--generated-at ISO_TIME]
 ```
 
-`pwb prepare` creates one run directory per task / runner / model / round and
-copies `TASK.md` plus `input/`. `pwb run` executes the runner inside each run
-directory and writes `stdout.log`, `stderr.log`, and `status.json`.
+`pwb prepare` 会为每个 task / runner / model / round 创建一个 run 目录，并复制 `TASK.md` 和 `input/`。`pwb run` 会在每个 run 目录里执行 runner，并写入 `stdout.log`、`stderr.log` 和 `status.json`。
 
-`pwb score` validates a human or external-audit CSV. It does not assign scores
-for you. Each score row must include `round`, `model`, `runner`, `score`,
-dimension columns, and artifact-specific `evidence`.
+`pwb score` 用来校验人工或外部 audit 生成的 CSV，不会替你主观打分。每一行评分都必须包含 `round`、`model`、`runner`、`score`、各个评分维度列，以及针对具体产物的 `evidence`。
 
-## Core Principles
+## 核心原则
 
-| Principle | Meaning |
+| 原则 | 含义 |
 |---|---|
-| Real task | Start from work you actually need to do. |
-| Repeated runs | Run each model multiple times to see average quality and low-tail risk. |
-| Separated variables | Keep model, provider, and runner explicit. |
-| Replaceable runner | `opencode`, Claude Code, or any shell command can be the execution wrapper. |
-| Evidence first | Scores need screenshots, DOM, logs, tests, or human review notes. |
-| No overclaiming | Report only what this task supports. |
+| 真实任务 | 从你真的需要完成的工作出发。 |
+| 多轮重复 | 每个模型跑多轮，观察平均质量和低尾风险。 |
+| 变量拆开 | 明确区分 model、provider 和 runner。 |
+| Runner 可替换 | `opencode`、Claude Code 或任意 shell 命令都可以作为执行外壳。 |
+| 证据优先 | 分数需要截图、DOM、日志、测试或人工审查记录支撑。 |
+| 不外推 | 只报告当前任务能支持的结论。 |
 
-## FuneralAI Web4 Case Study
+## FuneralAI Web4 大型案例
 
-`examples/funeralai-web4/` contains the first real large task snapshot: rebuilding
-a complex personal website with a home page, graph page, article list, and
-article detail pages.
+`examples/funeralai-web4/` 包含第一份真实大型任务快照：重构一个复杂个人网站，包括首页、知识图谱页、文章列表和文章详情页。
 
-Open the public results here:
-[FuneralAI Web4 测试榜单](https://funeralai.cc/test/).
+公开结果页：
+[FuneralAI Web4 测试榜单](https://funeralai.cc/test/)。
 
-Methodology page:
+方法说明页：
 [https://funeralai.cc/test/methodology/](https://funeralai.cc/test/methodology/)
 
-The repository keeps only the reusable and auditable parts:
+仓库只保留可复用、可审计的部分：
 
-- task prompt
-- scoring method
-- CSV / JSON / Markdown result summaries
-- representative screenshots
+- 任务 prompt
+- 评分方法
+- CSV / JSON / Markdown 结果摘要
+- 代表性截图
 
-It does not include the full private work directory, all generated sites, API
-keys, local provider settings, or large intermediate artifacts.
+仓库不包含完整私有工作目录、全部生成站点、API key、本地 provider 配置或体积较大的中间产物。
 
-## Reproducible Aggregates
+## 可复现聚合
 
-Use a fixed timestamp when regenerating committed leaderboards:
+重新生成需要提交的 leaderboard 时，可以固定时间戳：
 
 ```bash
 node scripts/pwb.mjs aggregate --generated-at 2026-01-01T00:00:00.000Z
