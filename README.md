@@ -6,7 +6,7 @@
   <strong>中文</strong> | <a href="README.en.md">English</a>
 </p>
 
-# Personal Work Benchmark
+# 葬AI Benchmark
 
 把你的真实工作变成可重复的个人 benchmark：同一份输入、同一份任务 prompt、同一套 runner 契约、多轮模型运行，以及有证据支撑的评分。
 
