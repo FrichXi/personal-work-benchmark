@@ -2,6 +2,10 @@
   <img src="https://raw.githubusercontent.com/FrichXi/funeralai/main/assets/logo.png" alt="葬AI" width="400">
 </p>
 
+<p align="center">
+  <strong>English</strong> | <a href="README.zh-CN.md">中文</a>
+</p>
+
 # Personal Work Benchmark
 
 Turn your real work into a repeatable personal benchmark: same inputs, same
