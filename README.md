@@ -90,7 +90,7 @@ pwb aggregate --input results/scores.csv --out results [--generated-at ISO_TIME]
 
 `pwb prepare` 会为每个 task / runner / model / round 创建一个 run 目录，并复制 `TASK.md` 和 `input/`。`pwb run` 会在每个 run 目录里执行 runner，并写入 `stdout.log`、`stderr.log` 和 `status.json`。
 
-`pwb score` 用来校验人工或外部 audit 生成的 CSV，不会替你主观打分。每一行评分都必须包含 `round`、`model`、`runner`、`score`、各个评分维度列，以及针对具体产物的 `evidence`。
+`pwb score` 用来校验人工、浏览器审计脚本或外部 audit 生成的 CSV，不会替你主观打分。每一行评分都必须包含 `round`、`model`、`runner`、`score`、各个评分维度列，以及针对具体产物的 `evidence`。评分来源应该在结果目录里明确说明，避免把人工判断、脚本检查和模型辅助复核混在一起。
 
 ## 核心原则
 
@@ -113,14 +113,23 @@ pwb aggregate --input results/scores.csv --out results [--generated-at ISO_TIME]
 方法说明页：
 [https://funeralai.cc/test/methodology/](https://funeralai.cc/test/methodology/)
 
-仓库只保留可复用、可审计的部分：
+仓库保留可复用、可审计的部分：
 
-- 任务 prompt
+- 脱敏后的任务 prompt 和运行元数据
 - 评分方法
-- CSV / JSON / Markdown 结果摘要
-- 代表性截图
+- CSV / JSON / Markdown 结果
+- WebBridge/CDP 原始浏览器证据
+- 每个站点的首页、图谱页、文章列表页截图
 
-仓库不包含完整私有工作目录、全部生成站点、API key、本地 provider 配置或体积较大的中间产物。
+当前主结果来自 60 个生成站点的统一 WebBridge/CDP 真实浏览器复评。graph 分数由脚本根据路由、DOM、canvas/SVG/pixel 信号和截图证据计算，不是 Opus 4.8 裁判，也不是人工给 graph 打分。graph 35% 权重是这个网站重构任务里的作者预设偏好，不代表通用模型能力权重。
+
+仓库不包含完整私有工作目录、全部生成站点、API key 或本地 provider 配置，因此不能从零完整复跑生成阶段；但可以审计公开的 prompt、运行元数据、raw evidence、截图和分数复算流程。
+
+复算 FuneralAI Web4 案例：
+
+```bash
+npm run funeralai:check
+```
 
 ## 可复现聚合
 

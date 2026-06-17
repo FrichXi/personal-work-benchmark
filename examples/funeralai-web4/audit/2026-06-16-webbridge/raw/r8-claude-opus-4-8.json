@@ -1,0 +1,458 @@
+{
+  "audited_at": "2026-06-15T17:35:52.467Z",
+  "channel": "kimi-webbridge-cdp-real-browser",
+  "max_open_pages": 6,
+  "actual_site_concurrency": 1,
+  "wait_ms": 2200,
+  "fixed_paths": [
+    "/",
+    "/graph/",
+    "/articles/",
+    "/articles/050/",
+    "/articles/080/",
+    "/articles/103/"
+  ],
+  "entry": {
+    "site_id": "r8-claude-opus-4-8",
+    "round": "r8",
+    "round_number": 8,
+    "model_slug": "claude-opus-4-8",
+    "model_name": "Claude Opus 4.8",
+    "source_dir": "<BENCHMARK_WORKDIR>/r8/claude-opus-4-8",
+    "serve_dir": "<BENCHMARK_WORKDIR>/r8/claude-opus-4-8",
+    "entry_rule": "root-index",
+    "base_url": "http://127.0.0.1:8547",
+    "port": 8547,
+    "article_page_count": 104
+  },
+  "source": {
+    "file_counts": {
+      "css": 1,
+      "js": 3,
+      "html": 107
+    },
+    "docs": {
+      "readme": true,
+      "verification": true,
+      "build_py": true,
+      "assets_dir": true
+    },
+    "css": {
+      "variable_count": 20,
+      "has_media_query": true,
+      "has_dark_theme": true,
+      "has_purple": false,
+      "font_family": true
+    },
+    "code": {
+      "zoom": true,
+      "drag": true,
+      "click": true,
+      "search": true,
+      "graph_lib": true
+    },
+    "text_markers": {
+      "nodes": true,
+      "edges": true,
+      "articles_103_or_104": true
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "url": "http://127.0.0.1:8547/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8547/",
+        "tabId": 2079644016
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8547/",
+        "title": "葬AI Web4 — 中文 AI 行业评论媒体",
+        "bodyTextLength": 757,
+        "bodyExcerpt": "葬 葬AI Web4 首页 知识图谱 文章 中文 AI 行业评论媒体 葬AI Web4 把炒作钉在解剖台上 独立、尖锐、有态度。我们拆解 AI 行业里的产品、创始人、投资机构与公司， 用一张 605 节点、1566 条关系的知识图谱，还原这场喧嚣背后真实的权力与连接。 进入知识图谱 → 阅读全部文章 103 篇深度评论文章 605 个实体节点 1566 条关系连接 # 这里有什么 // KNOWLEDGE GRAPH 知识图谱 605 个产品、创始人、投资机构与公司，1566 条竞争、投资、开发、整合关系。可缩放、拖拽、点击下钻。 // LEADERBOARDS 四类排行榜 产品 / 创始人 ",
+        "linkCount": 17,
+        "articleLinkCount": 11,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "阅读全部文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "// ARTICLES\n103 篇评论\n\n葬爱咸鱼、沐秋、骡子马三位作者的一线观察，可按作者筛选、关键词搜索。",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "// ATTITUDE\n有态度的拆解\n\n不做新闻搬运工，只做行业解剖刀。每篇都附带从正文抽取的实体与关系。",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "查看全部 →",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "#104\n生数鉴定为鸭腿吃多了\n骡子马 · 2026-06-15",
+            "href": "http://127.0.0.1:8547/articles/104/"
+          },
+          {
+            "text": "#103\nKimi看天讨饭吃\n葬爱咸鱼 · 2026-06-10",
+            "href": "http://127.0.0.1:8547/articles/103/"
+          },
+          {
+            "text": "#102\n腾讯做了一堆情感陪伴Agent\n沐秋 · 2026-06-09",
+            "href": "http://127.0.0.1:8547/articles/102/"
+          }
+        ],
+        "headings": [
+          "葬AI Web4\n把炒作钉在解剖台上",
+          "这里有什么",
+          "知识图谱",
+          "四类排行榜",
+          "103 篇评论",
+          "有态度的拆解",
+          "最新文章"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/graph/",
+      "url": "http://127.0.0.1:8547/graph/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8547/graph/",
+        "tabId": 2079644016,
+        "frameId": "CDB895F73014C201D483CEB988787E92"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8547/graph/",
+        "title": "知识图谱 — 葬AI Web4",
+        "bodyTextLength": 1431,
+        "bodyExcerpt": "葬 葬AI Web4 首页 知识图谱 文章 Claude 豆包 马卡龙 Manus 字节跳动 Cherry Studio Looki OpenClaw Plaud MiniMax 扣子 智谱AI Kimi Seedance Elys GenSpark MuleRun Lovart Flova ChatGPT DeepSeek 腾讯 钉钉 Agnes PixVerse 即梦 Medeo Bloome Codex Aippy 小智AI Qwen Flowith OS 阿里巴巴 Gemini 阿里云 阶跃星辰 蚂蚁集团 阶跃桌面伙伴 月之暗面 知识图谱 605 节点 · 1566 关系 · 点击节点",
+        "linkCount": 4,
+        "articleLinkCount": 1,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          }
+        ],
+        "headings": [
+          "知识图谱"
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "type": "",
+            "placeholder": "搜索节点，回车定位…",
+            "aria": ""
+          }
+        ],
+        "buttons": [
+          "+",
+          "−",
+          "⟲"
+        ],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 1,
+        "svgs": [
+          {
+            "clientWidth": 950,
+            "clientHeight": 482,
+            "circles": 605,
+            "paths": 0,
+            "lines": 1566,
+            "groups": 4,
+            "texts": 40,
+            "totalChildren": 2215
+          }
+        ],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/",
+      "url": "http://127.0.0.1:8547/articles/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8547/articles/",
+        "tabId": 2079644016,
+        "frameId": "CDB895F73014C201D483CEB988787E92"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8547/articles/",
+        "title": "全部文章 — 葬AI Web4",
+        "bodyTextLength": 169,
+        "bodyExcerpt": "葬 葬AI Web4 首页 知识图谱 文章 全部文章 104 篇 AI 行业评论，来自葬爱咸鱼、沐秋、骡子马。支持关键词搜索与作者筛选。 ⌕ 全部 葬爱咸鱼 沐秋 骡子马 葬AI Web4 · 中文 AI 行业评论媒体 · 独立 · 尖锐 · 有态度 103 ARTICLES / 605 NODES / 1566 RELATIONS",
+        "linkCount": 4,
+        "articleLinkCount": 1,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          }
+        ],
+        "headings": [
+          "全部文章"
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "type": "",
+            "placeholder": "搜索标题、作者、内容…",
+            "aria": ""
+          }
+        ],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/050/",
+      "url": "http://127.0.0.1:8547/articles/050/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8547/articles/050/",
+        "tabId": 2079644016,
+        "frameId": "CDB895F73014C201D483CEB988787E92"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8547/articles/050/",
+        "title": "Rokid是我的太阳（指物理温度） — 葬AI Web4",
+        "bodyTextLength": 4107,
+        "bodyExcerpt": "葬 葬AI Web4 首页 知识图谱 文章 首页 / 文章 / #050 Rokid是我的太阳（指物理温度） 作者 葬爱咸鱼 2026-01-08 #050 11 实体 · 7 关系 「戴久了有点烧🥵」葬AI终于有了首篇投稿👋😭👋作者是野生AI硬件产品经理Tomioka11，他自称在进行创业考察，所以购买并体验了市面上几乎所有AI眼镜。这是哥们写的第一篇测评，关注AR的家人们有福了，因为他计划挨个评价一遍AI眼镜产品👊👓🔥本文体验的产品是Rokid Glasses AI眼镜。从收货到发文，使用+测试约2周时间，属实是独立思考、深度使用。为了确认Tomioka11是正常人而不是疯狂",
+        "linkCount": 8,
+        "articleLinkCount": 4,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "← 上一篇 #049\n建议六小虎合并，实现China AGI",
+            "href": "http://127.0.0.1:8547/articles/049/"
+          },
+          {
+            "text": "下一篇 #051 →\n狠狠办千问",
+            "href": "http://127.0.0.1:8547/articles/051/"
+          }
+        ],
+        "headings": [
+          "Rokid是我的太阳（指物理温度）"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/080/",
+      "url": "http://127.0.0.1:8547/articles/080/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8547/articles/080/",
+        "tabId": 2079644016,
+        "frameId": "CDB895F73014C201D483CEB988787E92"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8547/articles/080/",
+        "title": "第一届通灵黑客松将在上海举办 — 葬AI Web4",
+        "bodyTextLength": 1363,
+        "bodyExcerpt": "葬 葬AI Web4 首页 知识图谱 文章 首页 / 文章 / #080 第一届通灵黑客松将在上海举办 作者 骡子马 2026-04-13 #080 0 实体 · 0 关系 我们决定在上海办一场以通灵为主题的黑客松。 你没听错，就是把「通灵」这个最玄学的事，和「黑客松」这个最科学的事，狠狠地结合起来大办一场。 具体而言，我们将邀请30名人类通灵师，和20名AI通灵Agent，让他们同台竞技。 比比是真人算命更准，还是AI算力更狂？ 有点像接入API的《通灵之战》或《天机试炼场》 无论你会占卜算卦，还是星座命理，无论是东方玄学还是西方神秘学，是东百出马跳大神还是北欧塔罗黑弥撒…… 只要你在广义的",
+        "linkCount": 8,
+        "articleLinkCount": 4,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "← 上一篇 #079\n电玩城复活在信息流",
+            "href": "http://127.0.0.1:8547/articles/079/"
+          },
+          {
+            "text": "下一篇 #081 →\n小登领导AI社交",
+            "href": "http://127.0.0.1:8547/articles/081/"
+          }
+        ],
+        "headings": [
+          "第一届通灵黑客松将在上海举办"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/103/",
+      "url": "http://127.0.0.1:8547/articles/103/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8547/articles/103/",
+        "tabId": 2079644016,
+        "frameId": "CDB895F73014C201D483CEB988787E92"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8547/articles/103/",
+        "title": "Kimi看天讨饭吃 — 葬AI Web4",
+        "bodyTextLength": 4177,
+        "bodyExcerpt": "葬 葬AI Web4 首页 知识图谱 文章 首页 / 文章 / #103 Kimi看天讨饭吃 作者 葬爱咸鱼 2026-06-10 #103 28 实体 · 29 关系 「同志们朋友们，版本回调了！ 现在的情况是，搞AI应用的家人们没活了。胜利女神的天平又一次倾向了大模型公司一边。有鉴于此，我们将复刻致敬葬AI一年前的系列——把模型公司挨个写一遍。 第一篇是我们亲爱的像太阳光辉一样照耀中国AI行业的版本之子Kimi，其他模型公司敬请期待😘」 在融资光辉的照耀下，Kimi最近拿出了山洪暴发一般的速度做产品。 Kimi code实现了日更，一个编程CLI天天发版更新。虽然似乎没啥人用，占据这个「",
+        "linkCount": 8,
+        "articleLinkCount": 4,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8547/articles/"
+          },
+          {
+            "text": "← 上一篇 #102\n腾讯做了一堆情感陪伴Agent",
+            "href": "http://127.0.0.1:8547/articles/102/"
+          },
+          {
+            "text": "下一篇 #104 →\n生数鉴定为鸭腿吃多了",
+            "href": "http://127.0.0.1:8547/articles/104/"
+          }
+        ],
+        "headings": [
+          "Kimi看天讨饭吃"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/r8-claude-opus-4-8-home.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 284514
+    },
+    {
+      "path": "screenshots/r8-claude-opus-4-8-graph.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 1385996
+    },
+    {
+      "path": "screenshots/r8-claude-opus-4-8-articles.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 100417
+    }
+  ],
+  "screenshot_refreshed_at": "2026-06-15T18:01:14.814Z",
+  "server_log": "server-logs/r8-claude-opus-4-8.log"
+}

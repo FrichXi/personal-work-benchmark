@@ -1,0 +1,328 @@
+{
+  "audited_at": "2026-06-15T19:29:28.574Z",
+  "channel": "kimi-webbridge-cdp-real-browser",
+  "max_open_pages": 6,
+  "actual_site_concurrency": 1,
+  "wait_ms": 2200,
+  "fixed_paths": [
+    "/",
+    "/graph/",
+    "/articles/",
+    "/articles/050/",
+    "/articles/080/",
+    "/articles/103/"
+  ],
+  "entry": {
+    "site_id": "r1-deepseek-v4-pro",
+    "round": "r1",
+    "round_number": 1,
+    "model_slug": "deepseek-v4-pro",
+    "model_name": "DeepSeek V4 Pro",
+    "source_dir": "<BENCHMARK_WORKDIR>/r1/deepseek-v4-pro",
+    "serve_dir": "<BENCHMARK_WORKDIR>/r1/deepseek-v4-pro",
+    "entry_rule": "root-missing-index",
+    "base_url": "http://127.0.0.1:8500",
+    "port": 8500,
+    "article_page_count": 0
+  },
+  "source": {
+    "file_counts": {
+      "css": 0,
+      "js": 0,
+      "html": 106
+    },
+    "docs": {
+      "readme": true,
+      "verification": true,
+      "build_py": true,
+      "assets_dir": false
+    },
+    "css": {
+      "variable_count": 0,
+      "has_media_query": true,
+      "has_dark_theme": false,
+      "has_purple": false,
+      "font_family": false
+    },
+    "code": {
+      "zoom": false,
+      "drag": false,
+      "click": false,
+      "search": true,
+      "graph_lib": true
+    },
+    "text_markers": {
+      "nodes": true,
+      "edges": true,
+      "articles_103_or_104": true
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "url": "http://127.0.0.1:8500/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html; charset=utf-8"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8500/",
+        "tabId": 2079644336
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8500/",
+        "title": "Directory listing for /",
+        "bodyTextLength": 100,
+        "bodyExcerpt": "Directory listing for / .DS_Store build.py deepseek.log opencode.json out/ README.md VERIFICATION.md",
+        "linkCount": 7,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "Directory listing for /"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": true,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 747,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": false
+      },
+      "navError": ""
+    },
+    {
+      "path": "/graph/",
+      "url": "http://127.0.0.1:8500/graph/",
+      "route": {
+        "ok": true,
+        "status": 404,
+        "contentType": "text/html;charset=utf-8"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8500/graph/",
+        "tabId": 2079644336,
+        "frameId": "9A600B6171E04D7AC69CF70066490CF4"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8500/graph/",
+        "title": "Error response",
+        "bodyTextLength": 119,
+        "bodyExcerpt": "Error response Error code: 404 Message: File not found. Error code explanation: 404 - Nothing matches the given URI.",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "Error response"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": true,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 747,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": false
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/",
+      "url": "http://127.0.0.1:8500/articles/",
+      "route": {
+        "ok": true,
+        "status": 404,
+        "contentType": "text/html;charset=utf-8"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8500/articles/",
+        "tabId": 2079644336,
+        "frameId": "9A600B6171E04D7AC69CF70066490CF4"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8500/articles/",
+        "title": "Error response",
+        "bodyTextLength": 119,
+        "bodyExcerpt": "Error response Error code: 404 Message: File not found. Error code explanation: 404 - Nothing matches the given URI.",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "Error response"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": true,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 747,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": false
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/050/",
+      "url": "http://127.0.0.1:8500/articles/050/",
+      "route": {
+        "ok": true,
+        "status": 404,
+        "contentType": "text/html;charset=utf-8"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8500/articles/050/",
+        "tabId": 2079644336,
+        "frameId": "9A600B6171E04D7AC69CF70066490CF4"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8500/articles/050/",
+        "title": "Error response",
+        "bodyTextLength": 119,
+        "bodyExcerpt": "Error response Error code: 404 Message: File not found. Error code explanation: 404 - Nothing matches the given URI.",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "Error response"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": true,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 747,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": false
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/080/",
+      "url": "http://127.0.0.1:8500/articles/080/",
+      "route": {
+        "ok": true,
+        "status": 404,
+        "contentType": "text/html;charset=utf-8"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8500/articles/080/",
+        "tabId": 2079644336,
+        "frameId": "9A600B6171E04D7AC69CF70066490CF4"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8500/articles/080/",
+        "title": "Error response",
+        "bodyTextLength": 119,
+        "bodyExcerpt": "Error response Error code: 404 Message: File not found. Error code explanation: 404 - Nothing matches the given URI.",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "Error response"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": true,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 747,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": false
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/103/",
+      "url": "http://127.0.0.1:8500/articles/103/",
+      "route": {
+        "ok": true,
+        "status": 404,
+        "contentType": "text/html;charset=utf-8"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8500/articles/103/",
+        "tabId": 2079644336,
+        "frameId": "9A600B6171E04D7AC69CF70066490CF4"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8500/articles/103/",
+        "title": "Error response",
+        "bodyTextLength": 119,
+        "bodyExcerpt": "Error response Error code: 404 Message: File not found. Error code explanation: 404 - Nothing matches the given URI.",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "Error response"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": true,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 747,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": false
+      },
+      "navError": ""
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/r1-deepseek-v4-pro-home.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 50106
+    },
+    {
+      "path": "screenshots/r1-deepseek-v4-pro-graph.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 43427
+    },
+    {
+      "path": "screenshots/r1-deepseek-v4-pro-articles.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 43427
+    }
+  ],
+  "server_log": "server-logs/r1-deepseek-v4-pro.log"
+}

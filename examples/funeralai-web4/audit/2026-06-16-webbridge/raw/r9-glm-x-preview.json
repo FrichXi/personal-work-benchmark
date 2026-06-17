@@ -1,0 +1,465 @@
+{
+  "audited_at": "2026-06-15T17:36:55.815Z",
+  "channel": "kimi-webbridge-cdp-real-browser",
+  "max_open_pages": 6,
+  "actual_site_concurrency": 1,
+  "wait_ms": 2200,
+  "fixed_paths": [
+    "/",
+    "/graph/",
+    "/articles/",
+    "/articles/050/",
+    "/articles/080/",
+    "/articles/103/"
+  ],
+  "entry": {
+    "site_id": "r9-glm-x-preview",
+    "round": "r9",
+    "round_number": 9,
+    "model_slug": "glm-x-preview",
+    "model_name": "GLM 5.2",
+    "source_dir": "<BENCHMARK_WORKDIR>/r9/glm-x-preview",
+    "serve_dir": "<BENCHMARK_WORKDIR>/r9/glm-x-preview",
+    "entry_rule": "root-index",
+    "base_url": "http://127.0.0.1:8551",
+    "port": 8551,
+    "article_page_count": 103
+  },
+  "source": {
+    "file_counts": {
+      "css": 1,
+      "js": 2,
+      "html": 106
+    },
+    "docs": {
+      "readme": true,
+      "verification": true,
+      "build_py": true,
+      "assets_dir": true
+    },
+    "css": {
+      "variable_count": 22,
+      "has_media_query": true,
+      "has_dark_theme": true,
+      "has_purple": true,
+      "font_family": true
+    },
+    "code": {
+      "zoom": true,
+      "drag": true,
+      "click": true,
+      "search": true,
+      "graph_lib": true
+    },
+    "text_markers": {
+      "nodes": true,
+      "edges": true,
+      "articles_103_or_104": true
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "url": "http://127.0.0.1:8551/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8551/",
+        "tabId": 2079644032
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8551/",
+        "title": "葬AI Web4",
+        "bodyTextLength": 284,
+        "bodyExcerpt": "葬AI Web4 首页 图谱 文章 // 葬愛咸鱼 · 沐秋 · 骡子马 葬AI Web4 中文AI行业评论媒体。103篇文章，600个实体，1546条关系——一个关于AI行业的完整知识图谱。 数据截至第103篇「Kimi看天讨饭吃」(2026.06.10) 103 ARTICLES 600 ENTITIES 1546 RELATIONS 3 AUTHORS 探索图谱 → 阅读文章 $ cat /dev/ai-industry | grep -v hype 葬AI Web4 · 中文AI行业评论媒体 · Substack · 独立 · 尖锐 · 有态度",
+        "linkCount": 7,
+        "articleLinkCount": 2,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "阅读文章",
+            "href": "http://127.0.0.1:8551/articles/"
+          }
+        ],
+        "headings": [
+          "葬AI Web4"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/graph/",
+      "url": "http://127.0.0.1:8551/graph/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8551/graph/",
+        "tabId": 2079644032,
+        "frameId": "3963B0131A4F4F2F6A303073607FF94E"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8551/graph/",
+        "title": "知识图谱 — 葬AI Web4",
+        "bodyTextLength": 1377,
+        "bodyExcerpt": "葬AI Web4 首页 图谱 文章 知识图谱 600个实体节点，1546条关系边。拖拽、缩放、点击探索AI行业关系网络。 + − ⟲ 产品 公司 人物 投资 ◎ 点击任意节点 查看详细信息 排行榜 按综合权重排名，覆盖产品、人物、投资机构和公司四个维度。 产品 (20) 人物 (20) 投资 (12) 公司 (20) # 名称 简介 连接 提及 文章 权重 1 Claude产品 由Anthropic开发的AI编程工具，被广泛用作套壳应用的底层引擎 75 186 32 2 豆包产品 抖音旗下/字节系的AI大模型产品，也是《豆包AI赚钱手册》的核心探讨对象 52 175 20 3 Manus产品 ",
+        "linkCount": 5,
+        "articleLinkCount": 1,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8551/articles/"
+          }
+        ],
+        "headings": [
+          "知识图谱",
+          "排行榜"
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "type": "text",
+            "placeholder": "搜索节点...",
+            "aria": ""
+          }
+        ],
+        "buttons": [
+          "+",
+          "−",
+          "⟲",
+          "产品 (20)",
+          "人物 (20)",
+          "投资 (12)",
+          "公司 (20)"
+        ],
+        "canvasCount": 1,
+        "canvases": [
+          {
+            "width": 1862,
+            "height": 1200,
+            "clientWidth": 931,
+            "clientHeight": 600,
+            "sampled": true,
+            "nonBlank": true,
+            "uniqueColors": 9,
+            "error": ""
+          }
+        ],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/",
+      "url": "http://127.0.0.1:8551/articles/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8551/articles/",
+        "tabId": 2079644032,
+        "frameId": "3963B0131A4F4F2F6A303073607FF94E"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8551/articles/",
+        "title": "文章 — 葬AI Web4",
+        "bodyTextLength": 24529,
+        "bodyExcerpt": "葬AI Web4 首页 图谱 文章 文章 103篇文章 · 103篇完整数据 · 2025.05 — 2026.06 ⌕ 全部 葬爱咸鱼 沐秋 骡子马 103 / 103 篇 #103 2026-06-10 葬爱咸鱼 Kimi看天讨饭吃 Kimi看天讨饭吃 2026年6月10日 葬爱咸鱼 葬AI --- 「同志们朋友们，版本回调了！ 现在的情况是，搞AI应用的家人们没活了。胜利女神的天平又一次倾向了大模型公司一边。有鉴于此，我们将复刻致敬葬AI一年前的系列——把模型公司挨个写一遍。 第一篇是我们亲爱的像太阳光辉一样照耀中国AI行业的版本之子Kimi，其他模型公司敬请期待😘」 在融资光辉的照耀",
+        "linkCount": 108,
+        "articleLinkCount": 104,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "#103\n2026-06-10\n葬爱咸鱼\nKimi看天讨饭吃\nKimi看天讨饭吃 2026年6月10日 葬爱咸鱼 葬AI --- 「同志们朋友们，版本回调了！ ",
+            "href": "http://127.0.0.1:8551/articles/103/"
+          },
+          {
+            "text": "#102\n2026-06-09\n沐秋\n腾讯做了一堆情感陪伴Agent\n腾讯做了一堆情感陪伴Agent 2026年6月9日 沐秋 葬AI --- 对AI效率赛道，",
+            "href": "http://127.0.0.1:8551/articles/102/"
+          },
+          {
+            "text": "#101\n2026-06-08\n骡子马\nAI圈神童杀死神人\nAI圈神童杀死神人 2026年6月8日 骡子马 葬AI --- 我们刚办完的网吧黑客松，哪都好，只有",
+            "href": "http://127.0.0.1:8551/articles/101/"
+          },
+          {
+            "text": "#100\n2026-06-07\n沐秋\n网吧黑客松里有真黑客\n网吧黑客松里有真黑客 2026年6月7日 沐秋 葬AI --- 「黑暗森林」 上周末我们在北京的网吧",
+            "href": "http://127.0.0.1:8551/articles/100/"
+          },
+          {
+            "text": "#099\n2026-06-04\n葬爱咸鱼\n马卡龙开创AI短剧Neo Lab\n马卡龙开创AI短剧Neo Lab 2026年6月4日 葬爱咸鱼 葬AI --- 马卡",
+            "href": "http://127.0.0.1:8551/articles/099/"
+          },
+          {
+            "text": "#098\n2026-06-01\n骡子马\nHeyGen不是给人用的\nHeyGen不是给人用的 2026年6月1日 骡子马 葬AI --- 很多人没听过HeyGen",
+            "href": "http://127.0.0.1:8551/articles/098/"
+          },
+          {
+            "text": "#097\n2026-05-28\n沐秋\n光帆耳机拒绝长发男\n光帆耳机拒绝长发男 2026年5月28日 沐秋 葬AI --- 「适合光头用」 光帆耳机是第一个让我测",
+            "href": "http://127.0.0.1:8551/articles/097/"
+          }
+        ],
+        "headings": [
+          "文章"
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "type": "text",
+            "placeholder": "搜索标题或内容...",
+            "aria": ""
+          }
+        ],
+        "buttons": [
+          "全部",
+          "葬爱咸鱼",
+          "沐秋",
+          "骡子马"
+        ],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/050/",
+      "url": "http://127.0.0.1:8551/articles/050/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8551/articles/050/",
+        "tabId": 2079644032,
+        "frameId": "3963B0131A4F4F2F6A303073607FF94E"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8551/articles/050/",
+        "title": "Rokid是我的太阳（指物理温度） — 葬AI Web4",
+        "bodyTextLength": 4165,
+        "bodyExcerpt": "葬AI Web4 首页 图谱 文章 ← 返回文章列表 #050 2026-01-08 葬爱咸鱼 Rokid是我的太阳（指物理温度） Rokid是我的太阳（指物理温度） 作者：葬爱咸鱼 发布日期：2026-01-08 来源：微信公众号「葬愛咸鱼」 「戴久了有点烧🥵」 葬AI终于有了首篇投稿👋😭👋 作者是野生AI硬件产品经理Tomioka11，他自称在进行创业考察，所以购买并体验了市面上几乎所有 AI眼镜。这是哥们写的第一篇测评，关注AR的家人们有福了，因为他计划挨个评价一遍AI眼镜产品 👊👓🔥 本文体验的产品是Rokid Glasses AI眼镜。从收货到发文，使用+测试约2周时间",
+        "linkCount": 8,
+        "articleLinkCount": 4,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "← 返回文章列表",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "← 上一篇\n建议六小虎合并，实现China AGI",
+            "href": "http://127.0.0.1:8551/articles/049/"
+          },
+          {
+            "text": "下一篇 →\n狠狠办千问",
+            "href": "http://127.0.0.1:8551/articles/051/"
+          }
+        ],
+        "headings": [
+          "Rokid是我的太阳（指物理温度）",
+          "Rokid是我的太阳（指物理温度）"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/080/",
+      "url": "http://127.0.0.1:8551/articles/080/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8551/articles/080/",
+        "tabId": 2079644032,
+        "frameId": "3963B0131A4F4F2F6A303073607FF94E"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8551/articles/080/",
+        "title": "第一届通灵黑客松将在上海举办 — 葬AI Web4",
+        "bodyTextLength": 1339,
+        "bodyExcerpt": "葬AI Web4 首页 图谱 文章 ← 返回文章列表 #080 2026-04-13 骡子马 第一届通灵黑客松将在上海举办 第一届通灵黑客松将在上海举办 「误闯天家」 2026年4月13日 罗子马 葬AI 我们决定在上海办一场以通灵为主题的黑客松。 你没听错，就是把「通灵」这个最玄学的事，和「黑客松」这个最科学的事，狠狠地结合起来大办一场。 具体而言，我们将邀请30名人类通灵师，和20名AI通灵Agent，让他们同台竞技。 比比是真人算命更准，还是AI算力更狂？ 有点像接入API的《通灵之战》或《天机试炼场》 无论你会占卜算卦，还是星座命理，无论是东方玄学还是西方神秘学，是东百出马跳大神还是北",
+        "linkCount": 8,
+        "articleLinkCount": 4,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "← 返回文章列表",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "← 上一篇\n电玩城复活在信息流",
+            "href": "http://127.0.0.1:8551/articles/079/"
+          },
+          {
+            "text": "下一篇 →\n小登领导AI社交",
+            "href": "http://127.0.0.1:8551/articles/081/"
+          }
+        ],
+        "headings": [
+          "第一届通灵黑客松将在上海举办",
+          "第一届通灵黑客松将在上海举办"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/103/",
+      "url": "http://127.0.0.1:8551/articles/103/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8551/articles/103/",
+        "tabId": 2079644032,
+        "frameId": "3963B0131A4F4F2F6A303073607FF94E"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8551/articles/103/",
+        "title": "Kimi看天讨饭吃 — 葬AI Web4",
+        "bodyTextLength": 3885,
+        "bodyExcerpt": "葬AI Web4 首页 图谱 文章 ← 返回文章列表 #103 2026-06-10 葬爱咸鱼 Kimi看天讨饭吃 Kimi看天讨饭吃 2026年6月10日 葬爱咸鱼 葬AI 「同志们朋友们，版本回调了！ 现在的情况是，搞AI应用的家人们没活了。胜利女神的天平又一次倾向了大模型公司一边。有鉴于此，我们将复刻致敬葬AI一年前的系列——把模型公司挨个写一遍。 第一篇是我们亲爱的像太阳光辉一样照耀中国AI行业的版本之子Kimi，其他模型公司敬请期待😘」 在融资光辉的照耀下，Kimi最近拿出了山洪暴发一般的速度做产品。 Kimi code实现了日更，一个编程CLI天天发版更新。虽然似乎没啥人用，占据",
+        "linkCount": 7,
+        "articleLinkCount": 3,
+        "firstArticleLinks": [
+          {
+            "text": "文章",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "← 返回文章列表",
+            "href": "http://127.0.0.1:8551/articles/"
+          },
+          {
+            "text": "← 上一篇\n腾讯做了一堆情感陪伴Agent",
+            "href": "http://127.0.0.1:8551/articles/102/"
+          }
+        ],
+        "headings": [
+          "Kimi看天讨饭吃",
+          "Kimi看天讨饭吃"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/r9-glm-x-preview-home.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 477255
+    },
+    {
+      "path": "screenshots/r9-glm-x-preview-graph.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 180940
+    },
+    {
+      "path": "screenshots/r9-glm-x-preview-articles.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 239590
+    }
+  ],
+  "screenshot_refreshed_at": "2026-06-15T18:01:49.914Z",
+  "server_log": "server-logs/r9-glm-x-preview.log"
+}

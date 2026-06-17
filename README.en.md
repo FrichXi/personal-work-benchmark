@@ -88,9 +88,10 @@ pwb aggregate --input results/scores.csv --out results [--generated-at ISO_TIME]
 copies `TASK.md` plus `input/`. `pwb run` executes the runner inside each run
 directory and writes `stdout.log`, `stderr.log`, and `status.json`.
 
-`pwb score` validates a human or external-audit CSV. It does not assign scores
-for you. Each score row must include `round`, `model`, `runner`, `score`,
-dimension columns, and artifact-specific `evidence`.
+`pwb score` validates a CSV produced by an explicitly named source: a human
+reviewer, a browser audit script, or another external audit tool. It does not
+assign scores for you. Each score row must include `round`, `model`, `runner`,
+`score`, dimension columns, and artifact-specific `evidence`.
 
 ## Core Principles
 
@@ -115,15 +116,32 @@ Open the public results here:
 Methodology page:
 [https://funeralai.cc/test/methodology/](https://funeralai.cc/test/methodology/)
 
-The repository keeps only the reusable and auditable parts:
+The repository keeps the reusable and auditable parts:
 
-- task prompt
+- redacted task prompt and run metadata
 - scoring method
-- CSV / JSON / Markdown result summaries
-- representative screenshots
+- CSV / JSON / Markdown results
+- WebBridge/CDP raw browser evidence
+- home, graph, and articles screenshots for every audited site
+
+The current main result comes from a unified WebBridge/CDP real-browser recheck
+over 60 generated sites. The graph score is computed by a script from route,
+DOM, canvas/SVG/pixel, and screenshot evidence. Opus 4.8 is not the judge, and
+the graph dimension is not manually scored. The 35% graph weight is an
+author-defined task preference for this website refactor benchmark, not a
+general model-capability weight.
 
 It does not include the full private work directory, all generated sites, API
-keys, local provider settings, or large intermediate artifacts.
+keys, or local provider settings. That means the generation phase cannot be
+rerun from scratch from this public repo alone, but the submitted prompt, run
+metadata, raw evidence, screenshots, and score recomputation path can be
+audited.
+
+Recompute the FuneralAI Web4 case:
+
+```bash
+npm run funeralai:check
+```
 
 ## Reproducible Aggregates
 

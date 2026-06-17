@@ -1,7 +1,10 @@
 # Scoring Contract
 
 `pwb score` does not judge artifacts for you. It validates and standardizes a
-CSV created by a human reviewer or external audit tool.
+CSV created by an explicitly named source: a human reviewer, a browser audit
+script, or another external audit tool. The source should be documented next to
+the result files so readers can tell whether a score came from manual review,
+deterministic checks, model-assisted review, or a mixed process.
 
 ## Required Columns
 
@@ -25,6 +28,10 @@ loading,graph,articles,visual,interaction
 Each row needs an artifact-specific evidence sentence. Do not use model-level
 template language. If two rows have the same score, the evidence should explain
 why the artifacts are actually similar.
+
+For browser-based audits, prefer evidence that names route status, DOM/text
+metrics, visible render signals, screenshots, logs, or test outputs. Avoid
+phrases like "looks good" unless they are backed by a visible artifact.
 
 Good evidence:
 

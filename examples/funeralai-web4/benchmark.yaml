@@ -8,7 +8,7 @@ task:
 
 inputs:
   fixture: private-full-workdir-not-included
-  prompt: task-prompt.md
+  prompt: prompts/refactor-prompt.redacted.md
 
 outputs:
   root: runs/{task}/{runner}/{model}/{round}
@@ -30,13 +30,11 @@ scoring:
     - id: graph
       label: Graph
       points: 35
-      source: graph_old25
-      scale_from: 25
+      source: graph
     - id: articles
       label: Articles
       points: 15
-      source: articles_old25
-      scale_from: 25
+      source: articles
     - id: visual
       label: Visual
       points: 20
@@ -51,10 +49,13 @@ evidence:
     - per-site evidence sentence
     - browser-loaded route status
     - graph render signal
+    - raw WebBridge/CDP probe JSON
     - sampled article detail text length
+    - home/graph/articles screenshots
   screenshots:
     - home
     - graph
+    - articles
 
 claims:
   allowed: 只说明葬AI Web4 复杂个人网站重构任务里的表现。

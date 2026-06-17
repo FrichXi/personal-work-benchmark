@@ -14,6 +14,9 @@
     "demo:score": "node scripts/pwb.mjs score --input examples/tiny-web-task/manual-scores.csv --out examples/tiny-web-task/results",
     "demo:aggregate": "node scripts/pwb.mjs aggregate --input examples/tiny-web-task/results/scores.csv --out examples/tiny-web-task/results --generated-at 2026-01-01T00:00:00.000Z",
     "aggregate": "npm run demo:aggregate",
+    "funeralai:sanitize": "node scripts/sanitize-funeralai-audit.mjs",
+    "funeralai:recompute": "node scripts/recompute-funeralai-webbridge-results.mjs --audit examples/funeralai-web4/audit/2026-06-16-webbridge",
+    "funeralai:check": "node scripts/recompute-funeralai-webbridge-results.mjs --audit examples/funeralai-web4/audit/2026-06-16-webbridge --check",
     "test": "node --test"
   },
   "dependencies": {

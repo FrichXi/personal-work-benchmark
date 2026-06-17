@@ -1,0 +1,351 @@
+{
+  "audited_at": "2026-06-15T17:27:36.837Z",
+  "channel": "kimi-webbridge-cdp-real-browser",
+  "max_open_pages": 6,
+  "actual_site_concurrency": 1,
+  "wait_ms": 2200,
+  "fixed_paths": [
+    "/",
+    "/graph/",
+    "/articles/",
+    "/articles/050/",
+    "/articles/080/",
+    "/articles/103/"
+  ],
+  "entry": {
+    "site_id": "r3-minimax-m3",
+    "round": "r3",
+    "round_number": 3,
+    "model_slug": "minimax-m3",
+    "model_name": "MiniMax M3",
+    "source_dir": "<BENCHMARK_WORKDIR>/r3/minimax-m3",
+    "serve_dir": "<BENCHMARK_WORKDIR>/r3/minimax-m3",
+    "entry_rule": "root-index",
+    "base_url": "http://127.0.0.1:8516",
+    "port": 8516,
+    "article_page_count": 104
+  },
+  "source": {
+    "file_counts": {
+      "css": 1,
+      "js": 6,
+      "html": 107
+    },
+    "docs": {
+      "readme": true,
+      "verification": true,
+      "build_py": false,
+      "assets_dir": true
+    },
+    "css": {
+      "variable_count": 32,
+      "has_media_query": true,
+      "has_dark_theme": true,
+      "has_purple": true,
+      "font_family": true
+    },
+    "code": {
+      "zoom": true,
+      "drag": true,
+      "click": true,
+      "search": true,
+      "graph_lib": true
+    },
+    "text_markers": {
+      "nodes": true,
+      "edges": true,
+      "articles_103_or_104": true
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "url": "http://127.0.0.1:8516/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8516/",
+        "tabId": 2079643892
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8516/",
+        "title": "葬AI Web4 — 中文AI行业知识图谱",
+        "bodyTextLength": 259,
+        "bodyExcerpt": "// 葬 AI · WEB 4 · KNOWLEDGE GRAPH 中文 AI 行业 知识图谱。 葬AI 把过去一年 104 篇关于中国 AI 行业的锐评、整活与硬核分析，拆成 605 个节点和 1566 条关系。 这里是它们的关系网络——按热度、按阵营、按作者笔下的站队，一目了然。 进入图谱 → 浏览全部文章 — 文章 · ARTICLES — 节点 · ENTITIES — 关系 · RELATIONS — 作者 · WRITERS 热度 榜单 按文章提及次数与图谱中心度综合排序 最近 文章 查看全部 →",
+        "linkCount": 3,
+        "articleLinkCount": 2,
+        "firstArticleLinks": [
+          {
+            "text": "浏览全部文章",
+            "href": "http://127.0.0.1:8516/articles/index.html"
+          },
+          {
+            "text": "查看全部 →",
+            "href": "http://127.0.0.1:8516/articles/index.html"
+          }
+        ],
+        "headings": [
+          "中文 AI 行业\n知识图谱。",
+          "热度 榜单",
+          "最近 文章"
+        ],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/graph/",
+      "url": "http://127.0.0.1:8516/graph/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8516/graph/",
+        "tabId": 2079643892,
+        "frameId": "37467643697DA1BD3F111DD4932BF898"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8516/graph/",
+        "title": "知识图谱 — 葬AI Web4",
+        "bodyTextLength": 78,
+        "bodyExcerpt": "⊕ 适配 ↻ 重排 A 标签 ⏸ 物理 0 节点 · 0 关系 加载中 产品 人物 资本 公司 实体榜 按文章提及与图谱中心度综合排序 · 点击定位到图谱",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "实体榜"
+        ],
+        "inputs": [],
+        "buttons": [
+          "⊕ 适配",
+          "↻ 重排",
+          "A 标签",
+          "⏸ 物理"
+        ],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/",
+      "url": "http://127.0.0.1:8516/articles/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8516/articles/",
+        "tabId": 2079643892,
+        "frameId": "37467643697DA1BD3F111DD4932BF898"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8516/articles/",
+        "title": "文章 — 葬AI Web4",
+        "bodyTextLength": 106,
+        "bodyExcerpt": "// 葬 AI · ARCHIVE 全部 文章。 共 104 篇来自「葬AI」的 AI 行业评论。 支持按作者筛选与关键词搜索。 全部作者 葬爱咸鱼 沐秋 骡子马 共 0 篇 · 按发布日期倒序 加载文章索引",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [
+          "全部 文章。"
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "type": "text",
+            "placeholder": "搜索标题、作者、正文...",
+            "aria": ""
+          }
+        ],
+        "buttons": [
+          "全部作者",
+          "葬爱咸鱼",
+          "沐秋",
+          "骡子马"
+        ],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/050/",
+      "url": "http://127.0.0.1:8516/articles/050/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8516/articles/050/",
+        "tabId": 2079643892,
+        "frameId": "37467643697DA1BD3F111DD4932BF898"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8516/articles/050/",
+        "title": "Rokid是我的太阳（指物理温度） — 葬AI Web4",
+        "bodyTextLength": 0,
+        "bodyExcerpt": "",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/080/",
+      "url": "http://127.0.0.1:8516/articles/080/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8516/articles/080/",
+        "tabId": 2079643892,
+        "frameId": "37467643697DA1BD3F111DD4932BF898"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8516/articles/080/",
+        "title": "第一届通灵黑客松将在上海举办 — 葬AI Web4",
+        "bodyTextLength": 0,
+        "bodyExcerpt": "",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    },
+    {
+      "path": "/articles/103/",
+      "url": "http://127.0.0.1:8516/articles/103/",
+      "route": {
+        "ok": true,
+        "status": 200,
+        "contentType": "text/html"
+      },
+      "nav": {
+        "success": true,
+        "url": "http://127.0.0.1:8516/articles/103/",
+        "tabId": 2079643892,
+        "frameId": "37467643697DA1BD3F111DD4932BF898"
+      },
+      "probe": {
+        "url": "http://127.0.0.1:8516/articles/103/",
+        "title": "Kimi看天讨饭吃 — 葬AI Web4",
+        "bodyTextLength": 0,
+        "bodyExcerpt": "",
+        "linkCount": 0,
+        "articleLinkCount": 0,
+        "firstArticleLinks": [],
+        "headings": [],
+        "inputs": [],
+        "buttons": [],
+        "canvasCount": 0,
+        "canvases": [],
+        "svgCount": 0,
+        "svgs": [],
+        "visibleErrors": false,
+        "viewport": {
+          "innerWidth": 1280,
+          "innerHeight": 540,
+          "devicePixelRatio": 2
+        },
+        "metaViewport": true
+      },
+      "navError": ""
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/r3-minimax-m3-home.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 821421
+    },
+    {
+      "path": "screenshots/r3-minimax-m3-graph.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 133122
+    },
+    {
+      "path": "screenshots/r3-minimax-m3-articles.png",
+      "ok": true,
+      "daemon_path": "<WEBBRIDGE_SCREENSHOT_PATH>",
+      "size_bytes": 613895
+    }
+  ],
+  "screenshot_refreshed_at": "2026-06-15T17:56:40.805Z",
+  "server_log": "server-logs/r3-minimax-m3.log"
+}
