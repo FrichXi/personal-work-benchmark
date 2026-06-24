@@ -118,12 +118,15 @@ pwb aggregate --input results/scores.csv --out results [--generated-at ISO_TIME]
 - 脱敏后的任务 prompt 和运行元数据
 - 评分方法
 - CSV / JSON / Markdown 结果
-- WebBridge/CDP 原始浏览器证据
-- 每个站点的首页、图谱页、文章列表页截图
+- 2026-06-23 当前公开 80 站结果包
+- 2026-06-16 旧 60 站 WebBridge/CDP 历史证据包
 
-当前主结果来自 60 个生成站点的统一 WebBridge/CDP 真实浏览器复评。graph 分数由脚本根据路由、DOM、canvas/SVG/pixel 信号和截图证据计算，不是 Opus 4.8 裁判，也不是人工给 graph 打分。graph 35% 权重是这个网站重构任务里的作者预设偏好，不代表通用模型能力权重。
+当前公开榜单来自 80 个生成站点：旧 60 站结果保留为历史证据包，2026-06-23 追加 Doubao Seed 2.1 Pro 与 Step 3.7 Flash 共 20 站，并用同一 graph-weighted 公式并入榜单。graph 分数由脚本根据路由、DOM、canvas/SVG/pixel 信号和截图证据计算，不是 Opus 4.8 裁判，也不是人工给 graph 打分。graph 35% 权重是这个网站重构任务里的作者预设偏好，不代表通用模型能力权重。
 
-仓库不包含完整私有工作目录、全部生成站点、API key 或本地 provider 配置，因此不能从零完整复跑生成阶段；但可以审计公开的 prompt、运行元数据、raw evidence、截图和分数复算流程。
+当前 80 站公开结果包：
+[`examples/funeralai-web4/results/2026-06-23-graphweighted-append/`](examples/funeralai-web4/results/2026-06-23-graphweighted-append/)
+
+仓库不包含完整私有工作目录、全部生成站点、API key、本地 provider 配置、原始账单 PDF/截图或完整本地日志，因此不能从零完整复跑生成阶段；但可以审计公开的 prompt、运行元数据、历史 raw evidence、截图、汇总日志分析和分数复算流程。
 
 复算 FuneralAI Web4 案例：
 

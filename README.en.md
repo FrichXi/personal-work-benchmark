@@ -121,21 +121,27 @@ The repository keeps the reusable and auditable parts:
 - redacted task prompt and run metadata
 - scoring method
 - CSV / JSON / Markdown results
-- WebBridge/CDP raw browser evidence
-- home, graph, and articles screenshots for every audited site
+- the current 2026-06-23 public 80-site result bundle
+- the historical 2026-06-16 60-site WebBridge/CDP evidence bundle
 
-The current main result comes from a unified WebBridge/CDP real-browser recheck
-over 60 generated sites. The graph score is computed by a script from route,
+The current public leaderboard covers 80 generated sites: the old 60-site
+result remains as a historical evidence bundle, and the 2026-06-23 append adds
+20 Doubao Seed 2.1 Pro and Step 3.7 Flash sites scored with the same
+graph-weighted formula. The graph score is computed by a script from route,
 DOM, canvas/SVG/pixel, and screenshot evidence. Opus 4.8 is not the judge, and
 the graph dimension is not manually scored. The 35% graph weight is an
 author-defined task preference for this website refactor benchmark, not a
 general model-capability weight.
 
+Current 80-site public result bundle:
+[`examples/funeralai-web4/results/2026-06-23-graphweighted-append/`](examples/funeralai-web4/results/2026-06-23-graphweighted-append/)
+
 It does not include the full private work directory, all generated sites, API
-keys, or local provider settings. That means the generation phase cannot be
-rerun from scratch from this public repo alone, but the submitted prompt, run
-metadata, raw evidence, screenshots, and score recomputation path can be
-audited.
+keys, local provider settings, raw bill PDFs/screenshots, or complete local
+logs. That means the generation phase cannot be rerun from scratch from this
+public repo alone, but the submitted prompt, run metadata, historical raw
+evidence, screenshots, summarized log analysis, and score recomputation path can
+be audited.
 
 Recompute the FuneralAI Web4 case:
 
